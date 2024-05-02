@@ -9,7 +9,6 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import axios from 'axios';
 import { useParams, useRouter } from 'next/navigation';
-import { useOrigin } from '@/hooks/use-origin';
 
 import { Heading } from "@/components/ui/heading";
 import { Button } from "@/components/ui/button";
@@ -24,7 +23,6 @@ import {
   FormMessage
 } from '@/components/ui/form';
 import { AlertModal } from '@/components/modal/alert-modal';
-import { ApiAlert } from '@/components/ui/api-alert';
 import ImageUpload from '@/components/ui/image-upload';
 
 const formSchema = z.object({
@@ -44,7 +42,6 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
 }) => {
   const params = useParams();
   const router = useRouter();
-  const origin = useOrigin();
 
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false)
