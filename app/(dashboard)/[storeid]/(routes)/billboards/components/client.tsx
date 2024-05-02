@@ -23,7 +23,7 @@ export const BillboardClient = () => {
             Add New
         </Button>
       </div>    
-      <Separator/>
+      <Separator className="mt-4"/>
     </>
   )
 }
