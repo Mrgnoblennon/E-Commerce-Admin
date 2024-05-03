@@ -33,7 +33,7 @@ export const ProductClient:React.FC<ProductClientProps> = ({
         </Button>
       </div>    
       <Separator className="mt-4"/>
-      <DataTable searchKey="label" columns={columns} data={data}/>
+      <DataTable searchKey="name" columns={columns} data={data}/>
       <Heading title='API' description="API calls for Products"/>
       <Separator className="my-4"/>
       <ApiList entityName="products" entityIdName="productsId"/>
