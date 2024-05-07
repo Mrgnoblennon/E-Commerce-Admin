@@ -9,7 +9,7 @@ import { ModalProvider } from "@/providers/modal-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Admin Dashboard",
+  title: "FF Dashboard",
   description: "Admin Dashboard",
 };
 
