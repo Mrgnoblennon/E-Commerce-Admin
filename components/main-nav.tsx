@@ -12,6 +12,9 @@ export function MainNav({
   const pathname = usePathname();
   const params = useParams();
 
+  console.log('Pathname:', pathname);
+  console.log('Params:', params);
+
   const routes = [
     {
       href: `/${params.storeId}`,
