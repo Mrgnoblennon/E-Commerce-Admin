@@ -66,7 +66,7 @@ To set up this project locally, follow these steps:
 1. Clone the repository:
 
   ```bash
-  git clone git@github.com:Mrgnoblennon/E-Commerce-Admin.git
+  git clone https://github.com/Mrgnoblennon/E-Commerce-Admin.git
   cd first-flaw-jewels-backend
   ```
 
