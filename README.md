@@ -135,8 +135,32 @@ Set up Stripe API keys and webhook secret in the .env file:
 
 ```bash
 STRIPE_API_KEY=
+```
+
+Starting a Local Webhook with Stripe CLI
+To test Stripe webhooks locally, follow these steps:
+
+Install the Stripe CLI: If you haven't already, install the Stripe CLI or use Terminal CLI.
+
+Login to Stripe using the CLI
+
+``` bash
+stripe login
+```
+
+Start the webhook forwarding: Use the Stripe CLI to forward events to your local development server.
+
+```bash
+stripe listen --forward-to http://localhost:3000/api/webhook
+```
+
+Replace the port number and or /api/webhooks/stripe with the actual endpoint handling your webhooks if it's different. You should now recieve your webhook signing secret. Please add the secret to the .env variable.
+
+```bash
 STRIPE_WEBHHOK_SECRET=
 ```
+
+Trigger events: You can now trigger events using the Stripe dashboard or the Stripe CLI to test your webhook handler.
 
 ## 🌐 Frontend Store URL
 Set up the URL of the frontend store in the .env file:
@@ -144,6 +168,7 @@ Set up the URL of the frontend store in the .env file:
 ```bash
 FRONTEND_STORE_URL=http://localhost:"port"
 ```
+Change port number to match the frontend store.
 
 ## 🧩 Components
 
