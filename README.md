@@ -1,6 +1,6 @@
 # 💎 E-Commerce Admin
 
-This is the backend for the First Flaw Jewels e-commerce platform. It manages product data, user authentication, and various other backend services essential for running the [E-Commerce-Admin](https://github.com/Mrgnoblennon/E-Commerce-Store-Front)
+This is the backend for the First Flaw Jewels e-commerce platform. It manages product data, user authentication, and various other backend services essential for running the [E-Commerce-Store-Front](https://github.com/Mrgnoblennon/E-Commerce-Store-Front)
 
 ## 🚀 Features
 
